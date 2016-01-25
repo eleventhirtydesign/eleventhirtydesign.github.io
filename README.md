@@ -1,2 +1,2 @@
-[ElevenThirty Design](http://eleventhirtydesign.github.io/eleventhirtydesign/)
+[ElevenThirty Design](http://eleventhirtydesign.github.io)
 New portfolio site
