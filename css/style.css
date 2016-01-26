@@ -1,0 +1,270 @@
+/*   
+Project: Hello World Personal
+Project URI: http://pixelpaper.github.io
+Author: Paul McCormack
+Author URI: http://eleventhirty.co
+*/
+
+
+/* Reset Browser Defaults*/
+
+* {
+  padding:0;
+  margin: 0;
+}
+*, 
+*:before, 
+*:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+
+/*--------------------  MAIN STRUCTURE -------------------*/
+
+body { 
+    font-family: "interface",sans-serif;
+    font-size: 100%;
+    color: #444;
+    line-height: 1.5em;
+    background:  url(../images/graph_paper_light.jpg) repeat;
+    font-variant-ligatures: normal; 
+}
+
+section, header, footer {
+    font-size: 110%;
+    margin: auto;
+    max-width: 650px;
+    }
+
+hgroup {margin-top: 4em}
+
+hgroup h1 {
+    margin-top: 1.5em;
+    font-family: "athelas",serif;
+    text-shadow: 2px 2px 0px #fff, 3px 4px 0px rgb(173,201,100);}
+
+
+.blackback {
+    background: black;
+    }
+
+.intro {
+    padding-top: 2em;
+    font-size: 1.25em;
+    line-height: 1.5em
+    }
+
+/* -------------------Typography -------------------*/
+
+h1,h2,h3 {
+    text-align: center;
+    font-kerning: auto;}
+
+ul, li {
+    list-style: none
+}
+
+h1, h2, h3 {
+    font-weight: 100;
+    text-align: center;}
+        
+h1 {font-size: 4.5em;
+    margin-bottom: .1em;}
+
+h2 {font-size: 2em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin: 2em 0 1em 0;
+    color: #96b522}
+
+h3 {margin-top: 2.5em;
+    color: #96b522    
+    }
+
+p, li {
+    font-weight: 300;
+    line-height: 1.8em;
+    margin-bottom: 1em;
+    color: #444}
+
+hgroup h2 {
+    text-transform: none;
+    padding: 0 1em;
+    margin: 1em 0;
+    text-align: center;
+    font-family: "athelas",serif;
+    font-style: italic;
+    color: #96b522;}
+
+
+.blackback {
+    background: url(../images/dark_laid.jpg) repeat;
+    color: #f1f1f1}
+
+.blackback p {color: #f1f1f1}
+
+.blackback ul {padding-bottom: 2em}
+
+.blackback h2 {padding: 2em 0 1em 0; }
+
+.leader {
+    text-transform: uppercase;
+    color: #96b522 }
+
+/*.graph h2 {padding: 1em 0 1em 0}*/
+
+/* -------------- LINKS -------------------- */
+
+a {
+    color: #96b522 ;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c06;
+    -webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out; 
+		-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out; 
+}
+/* ---------------- NAV ------------------- */
+
+nav {
+
+    }
+
+nav ul {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul li {
+
+    display: inline;
+    margin: 20px;
+}
+
+/*nav a:hover {
+        -webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out; 
+		-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out; }*/
+
+/* ------------------- IMAGES -------------------- */
+
+img {
+    display: block;
+    margin: 1em auto; /* This sets the margin top and bottom to 0px. The auto on the left and right will automatically calculate the space either side and split it evenly between the two margins. */
+    padding: 2em 0 4em 0;
+    max-width: 100%; /* This means that the images will resize to fit the parent container instead of just rendering at its native width and overflowing its containing box. */
+   /* border: #c06 5px solid; */
+}
+
+.portfolio img ul {margin-bottom: 3em}
+
+.logos {opacity: 0.4}
+
+/* --------------------- FOOTER --------------------- */
+
+footer {
+    text-align: center;
+    font-size: .75em;
+    line-height: 1.5em;
+    padding-bottom: 2em;
+    }
+
+footer+small {
+    text-align: left
+    }
+
+
+
+footer hr {margin-bottom: 3em
+    }
+
+small {text-transform: uppercase}
+
+.connections {
+	position: relative;
+	margin: 0 auto;
+	margin: 20px, 0;
+}
+
+.connections ul {
+	margin: 0;
+	padding: 0;}
+
+.connections li {
+	margin: 0 .7em;
+	padding: 0;
+	list-style: none; 
+	display: inline-block;}
+
+connections a:link {
+	border-bottom: none;}
+	
+.connections img {
+	opacity: 0.3;
+    padding: 0
+	}
+	
+.connections a:hover img {
+		opacity: 1.0;
+		border-bottom: none;
+	-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out; 
+		-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out; 
+			-moz-transform:scale(1.2);
+			-webkit-transform:scale(1.2);
+				transform:scale(1.2);}	
+
+.pink {background: #c06}
+
+/* ----------------- MEDIA QUERIES ----------------------*/
+
+
+/*------------------ TABLET ----------------------*/
+@media (max-width: 50em) {
+    
+   
+    
+article {
+    width: 95%;
+    padding: 0.5em;
+    } 
+    
+    img {
+    display: block;
+    margin: 1em auto;
+    padding: 0;
+    max-width: 100%;
+    }
+} 
+
+/*----------- SMARTPHONE ----------- */
+ @media (max-width: 30em) {
+    
+   body {
+    margin: auto 0;
+    width: 100%;
+    font-size: 110%;
+    }
+    
+article {
+    width: 90%;
+    } 
+
+h1 {font-size: 3.5em;}   
+
+     
+hgroup h2 {font-size: 1.5em;
+padding-top: 0.5em}  
+     
+nav ul li {font-size: .75em;
+        margin: 10px}
+}
+
